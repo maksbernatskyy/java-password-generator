@@ -23,6 +23,9 @@ public class PasswordGenerator {
         System.out.println("Write your date of birth");
         String dateOfBirth = input.nextLine();
 
+        // Chiudo l'input
+        input.close();
+
         // Estrapolo dalla data di nascita solo l'anno
         String yearOfBirth = dateOfBirth.substring(6);
 
