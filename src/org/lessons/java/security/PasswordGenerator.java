@@ -12,7 +12,11 @@ public class PasswordGenerator {
         System.out.println("Write your favourite colour");
         String favouriteColour = input.nextLine();
         System.out.println(
-            String.format("")
+            String.format("Your password is: %s-%s-%s",
+                firstName,
+                secondName,
+                favouriteColour
+            )
         );
     }
 }
