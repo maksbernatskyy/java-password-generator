@@ -19,15 +19,23 @@ public class PasswordGenerator {
         System.out.println("Write your favourite colour");
         String favouriteColour = input.nextLine();
 
-        // Data di nascita
-        System.out.println("Write your date of birth");
-        String dateOfBirth = input.nextLine();
+        // Giorno di nascita
+        System.out.println("Write your day of birth");
+        int dayOfBirth = input.nextInt();
+
+        // Mese di nascita
+        System.out.println("Write your month of birth");
+        int monthOfBirth = input.nextInt();
+    
+        // Anno di nascita
+        System.out.println("Write your year of birth");
+        int yearOfBirth = input.nextInt();
+
+        // Somma della data
+        int sumYear = dayOfBirth + monthOfBirth + yearOfBirth; 
 
         // Chiudo l'input
         input.close();
-
-        // Estrapolo dalla data di nascita solo l'anno
-        String yearOfBirth = dateOfBirth.substring(6);
 
         // Output della password, metodo utilizzato per codice più pulito
         System.out.println(
@@ -35,7 +43,7 @@ public class PasswordGenerator {
                 firstName,
                 secondName,
                 favouriteColour,
-                yearOfBirth
+                sumYear
             )
         );
     }
